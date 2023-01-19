@@ -9,11 +9,11 @@ export class ProductoService {
   constructor(private http: HttpClient) { }
 
   obtenerProductos() {
-    return this.http.get('http://localhost:3000/api/productos')
+    return this.http.get('http://44.196.119.20:3000/api/productos')
   }
 
   obtenerProductoPorId(id: number) {
-    return this.http.get('http://localhost:3000/api/productos/'+id.toString())
+    return this.http.get('http://44.196.119.20:3000/api/productos/'+id.toString())
   }
   
 
